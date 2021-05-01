@@ -11,3 +11,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+source <(kubectl completion zsh)
+
+# Exports
+export JAVA_HOME=/usr/lib/jdk1.8.0_171
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=/usr/lib/apache-maven-3.3.9/bin:$PATH
+
+# Aliases
+alias cd_marwatch='cd /mnt/c/Users/thoma/git/MarWatch'
+alias cd_van='cd /mnt/c/Users/thoma/git/MW7'
+alias cd_mds='cd /mnt/c/Users/thoma/git/MDS'
+alias cd_lass='cd /mnt/c/Users/thoma/git/Omnibase'
+alias cd_ops='cd /mnt/c/Users/thoma/git/MarWatch-OPS'
+
+# Alias Override
+alias ll='ls -al'
+alias glo='git log --oneline'
+alias gwds='git diff --stat'
